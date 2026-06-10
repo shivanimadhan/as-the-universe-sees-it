@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>As the Universe Sees It</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="home" class="page active">
+      <h1>As the Universe Sees It</h1>
+      <br>
+      <button class="begin-button" onclick="goTo('epigraph')">BEGIN</button>
+    </div>
+
+    <div id="epigraph" class="page">
+      <div class="text-box">
+        <h2 class="line-1">There is no objective truth.</h2>
+        <h2 class="line-2">Just the one we hold.</h2>
+      </div>
+      <br>
+      <button class="continue-button" onclick="goTo('story-select')">CONTINUE</button>
+    </div>
+
+    <div id="story-select" class="page">
+      <div class="story-select-container">
+        <div class="select-box imara-select-box" onclick="goTo('imara-story')">
+          <h2 class="imara-select">IMARA</h2>
+        </div>
+        <div class="select-box davan-select-box" onclick="goTo('davan-story')">
+          <h2 class="davan-select">DAVAN</h2>
+        </div>
+      </div>
+    </div>
+
+    <div id="imara-story" class="page">
+      <div class="story-box imara-story-box"></div>
+      <br>
+      <button>DAVAN</button>
+    </div>
+
+    <div id="davan-story" class="page">
+      <div class="story-box davan-story-box"></div>
+      <br>
+      <button>IMARA</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
